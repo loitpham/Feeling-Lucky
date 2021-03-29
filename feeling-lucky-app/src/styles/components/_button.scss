@@ -1,0 +1,39 @@
+// Big buttons
+.big-button {
+  background-color: palevioletred;
+  border: none;
+  border-bottom: .6rem solid darken(palevioletred, 10%);
+  color: white;
+  font-weight: bold;
+  font-size: $large-size;
+  margin-bottom: $medium-size;
+  padding: 2.4rem;
+  width: 100%;
+}
+
+.big-button:disabled {
+  opacity: .5;
+}
+
+// Regular buttons
+.button {
+  background-color: palevioletred;
+  border: none;
+  border-bottom: .3rem solid darken(palevioletred, 10%);
+  color: white;
+  font-weight: 500;
+  padding: $small-size;
+}
+
+.button__link {
+  background: none;
+  border: none;
+  color: $off-white;
+  padding: 0;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .big-button {
+    margin-bottom: $xlarge-size;
+  }
+}
